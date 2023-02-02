@@ -1,0 +1,22 @@
+.list-item{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding-top: 50px;
+    padding-bottom:50px;
+    margin-bottom: 13px;
+}
+.list-item-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.list-item-content>button{
+    background-color: rgb(251, 62, 62);
+    border-radius: 50px;
+    padding: 10px;
+    border: none;
+    color: white;
+}
+.list-item-content>button:hover{
+    cursor: pointer;
+}
