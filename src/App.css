@@ -5,4 +5,5 @@
 .box{
   background-color: rgb(226, 227, 230);
   padding: 12px;
+  /* height: 100vh; */
 }

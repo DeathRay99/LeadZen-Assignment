@@ -4,10 +4,15 @@ import { useEffect, useState } from "react";
 function App() {
   const [data, setData] = useState([]);
   const getData = async () => {
-    const res = await fetch("https://jsonplaceholder.typicode.com/users");
-    const newdata=await res.json();
-    setData(newdata);
+    try {
+      const res = await fetch("https://jsonplaceholder.typicode.com/users");
+      const newdata = await res.json();
+      setData(newdata);
+    } catch (error) {
+      console.log(error.message);
+    }
   };
+
   useEffect(() => {
     getData();
   }, []);
